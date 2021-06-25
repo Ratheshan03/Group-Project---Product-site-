@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DRIC - CONTACT</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <script src="../JAVASCRIPT/script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="nav-bar">
+        <span><img class="logo1" src="../images/running.png"></span>
+        <a href="https://w1809947.users.ecs.westminster.ac.uk/HTML/Main.html">HOME</a>
+        <a href="https://w1809984.users.ecs.westminster.ac.uk/buyingItem.html">PRODUCTS</a>
+        <a href="https://w1809945.users.ecs.westminster.ac.uk/Quiz/WithBg.html">QUIZ</a>
+        <a href="https://w1809982.users.ecs.westminster.ac.uk/sitemap/sitemap-dinuki.html">DIAGRAM</a>
+        <a href="https://w1809945.users.ecs.westminster.ac.uk/StudentDetails/St_Details.html">STUDENT DETAILS</a>
+        <a href="https://w1809982.users.ecs.westminster.ac.uk/thumnbnail/thumnail-dinuki.html">THUMBNAIL IMAGES</a>
+        <a href="https://w1809947.users.ecs.westminster.ac.uk/HTML/contact.html" class="active-nav">CONTACT</a>
+    </div>
+
+    <div class="title-bar-2">
+        <div class="title-1">
+            <img class="logo" src="../images/running.png">
+            <h1 class="main-heading"> DRIC </h1>
+            <p class="sub-heading"> FOREVER COMFORT </p>
+        </div>
+    </div>
+    <div class="social-icons">
+        <ul>
+            <li>
+                <p class="sub-heading-2"> World's Leading Athetics Shoes Seller </p>
+            </li>
+            <li>
+                <p>Join With Us</p>
+            </li>
+            <li><img src="../images/twitter.png" height="30" width="30" href=""></li>
+            <li><img src="../images/facebook.png" height="30" width="30" href=""></li>
+            <li><img src="../images/instagram.png" height="30" width="30" href=""></li>
+        </ul>
+    </div>
+
+    <div class="display-query" id="display-query">
+        <div class="left-text">
+            <h3 id="Tquery"> Queries </h3>
+            <p class="query-text"> We are partnershiped with various international brands around the world. All are
+                genuine products with 1 year of company warranty and 3 months for any returns. <br><br>
+                However If there any kind of queries, feel free to access our query form below and send us a clear,
+                brief query details with Sincere manner. <br><br>
+                To enter your queries please click the button below.</p>
+            <input type="button" class="Query-btn" value="Query Form" onclick="querybtn()" id="querybtn"></button>
+        </div>
+
+        <div class="whole-form" id="wholeform">
+            <Form id="form" name="formQuery" action="mailto:ratheshan.20200170@iit.ac.lk" method="POST"
+                class="form-contain">
+                <div class="form-main" id="queryForm">
+
+                    <h3 id="header"><u>QUERY FORM</u></h3>
+                    <label for="fullname"> Name:</label><br>
+                    <input type="text" name="fullname" id="fullname" placeholder="Enter your fullname"><br>
+
+                    <label for=" email"> Email: </label><br>
+                    <input type="email" name="email" id="email" placeholder="Enter your email address"><br>
+
+
+                    <label for="subject">Subject: </label><br>
+                    <select name="subject" id="subject" placeholder="Select the subject"><br>
+                        <option value=""></option>
+                        <option value="Delivery">Delivery</option>
+                        <option value="Price">Price</option>
+                        <option value="Payment Options">Payment Options</option>
+                        <option value="Warranty">Warranty</option>
+                        <option value="Additional contact info">Additional Contact Information</option>
+                    </select><br>
+
+                    <label for=" query "> Details: </label><br>
+                    <textarea name=" query " id="query" rows="3" cols="20"
+                        placeholder="Enter your Query details:"></textarea><br><br>
+
+                    <input type="button" value="View Query" name="view-btn" id="view-btn" onclick="validateform()">
+                    <input type="button" value="Check" name="check-btn" id="check-btn" onclick="checkbtn()">
+
+                </div>
+
+                <div class="right-text" id="display-text">
+                    <h3>Query:</h3>
+                    <span id="names"></span>
+                    <span id="emails"></span>
+                    <span id="subjects"></span>
+                    <span id="querys"></span><br><br>
+
+                    <input type="button" value="Edit" name="check-btn" id="edit-btn" onclick="editbtn()">
+                    <input type="submit" value="Send" name="send-btn" id="send-btn" onclick="sendbtn()">
+                </div>
+
+            </Form>
+        </div>
+    </div>
+    <div class="bottom" id="info">
+        <div class="b-left">
+            <h4>Page Developer</h4>
+            <a id="EditorPage" href="https://w1809947.users.ecs.westminster.ac.uk/HTML/editorPage.html" class="e-link">
+                Ratheshan Sathiyamoorthy </a>
+
+        </div>
+        <div class="b-middle">
+            <h4>Group Members</h4>
+            <ul>
+                <li> Weerathne Chamoda De Silva</li>
+                <li> Ratheshan Sathiyamoorthy</li>
+                <li> Mahdhiya Imthiaz </li>
+                <li> Dinuki Senara Egodage</li>
+            </ul>
+        </div>
+        <div class="b-right">
+            <h4> Find Us On</h4>
+            <ul>
+                <li> Email: Drick@gmail.com</li>
+                <li> Facebook: Drick Sports </li>
+                <li> Twitter: OfficialDrick </li>
+                <li> instagram: Drick </li>
+            </ul>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
